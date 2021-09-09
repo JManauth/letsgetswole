@@ -34,7 +34,8 @@ const workoutSchema = new Schema({
         sets:{
             type: Number, 
         }
-    }]
+    }],
+    versionKey: false 
 });
 
 const Workout = mongoose.model("Workout", workoutSchema);
